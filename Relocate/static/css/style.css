@@ -1,0 +1,150 @@
+/* Your custom styles */
+.navbar{ 
+    box-shadow: none;
+}
+.auth-content {
+    width: 300px;
+}
+.small-link {
+    font-size: 12px;
+}
+.md-form .mdb-select input{
+    height: 2.4rem;
+}
+.title-sting {
+    margin-top: 35px;
+    color: #495057;
+}
+.hide { display: none; }
+
+.title-group {
+    font-size: 20px;
+    margin-top: 5px;
+}
+.title-primary {
+    font-weight: bold;
+    margin-right: 15px;
+}
+.title-secondary {
+    color: #a79999;
+}
+
+.well {
+    cursor: pointer;
+    background-color: #f7f6f6;
+    padding: 20px;
+}
+.well .fa {
+    margin-left: 10px;
+}
+.profile-group {
+    color: #495057;
+    text-align: right;
+    margin-right: 20px;
+    line-height: 1;
+    margin-top: 3px;
+}
+.profile-group .profile { 
+    display: block;
+}
+.profile-group .profile.type {
+    color: #a79999;
+    font-size: 12px;
+}
+.breadcrumb {
+    background-color: #fff;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-bottom: 0;
+}
+.breadcrumb-item+.breadcrumb-item::before {
+    content: "";
+    padding-left: 0;
+    padding-right: 0;
+}
+.table .fa {
+    margin-right: 5px;
+}
+.table .empty-value {
+    padding-left: 30px;
+}
+.text-sm {
+    font-size: 12px;
+}
+.text-ssm {
+    font-size: 10px;
+}
+.btn-complete {
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+.btn-complete:hover {
+    background-color: #efebeb;
+}
+.article-content img {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.table .btn-icon-dropdown-toggle {
+    cursor: pointer;
+    width: 30px;
+    height: 20px;
+    float: right;
+    position: relative;
+    bottom: 3px;
+}
+.table .btn-icon-dropdown-toggle .fa {
+    position: absolute;
+    left: 13px;
+    top: 6px;
+}
+.btn-plain, .btn-plain:hover, .btn-plain:active, .btn-plain:focus {
+    border: none !important;
+    box-shadow: none;
+}
+.form .with-plain-btn .btn{
+    margin-top: 16px;
+}
+#editor {
+    height: 375px;
+    margin-bottom: 80px;
+}
+.navbar .nav-item.avatar .dropdown-toggle img {
+    height: 35px;
+}
+.navbar .nav-item.avatar .dropdown-toggle {
+    padding: 0px;
+}
+
+.editor-controls {
+    background-color: #334291 !important;
+}
+.editor-controls .btn {
+    padding: 10px;
+    background-color: #334291 !important;
+}
+.editor-controls .collapse {
+    display: -webkit-box!important;
+    display: -ms-flexbox!important;
+    display: flex!important;
+    -ms-flex-preferred-size: auto;
+    flex-basis: auto;
+}
+.editor-controls .navbar-nav {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+.ql-editor p {
+    color: #495057;
+    font-size: 1rem;
+}
+.pos-relative {
+    position: relative;
+}
+select.browser-default {
+    margin-top: 1.5rem;
+}
