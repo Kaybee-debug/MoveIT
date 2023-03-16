@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url(images/home-bg.jpg);
+}
+
+.register {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.register h3 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #FFFFFF;
+    font-size: 1.7rem;
+    font-weight: 100;
+    margin-top: 1rem;
+    padding: 1rem 0;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.register .content {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.register form {
+    display: flex;
+    flex-direction: column;
+}
+
+.register .inputbox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border: 1px solid #9f9f9f;
+    border-radius: 1rem;
+    box-shadow: 2px 2px #9f9f9f;
+}
+
+.register .inputbox span {
+    font-size: 20px;
+    color: #9f9f9f;
+    padding-left: 1.5rem;
+}
+
+.register .inputbox input {
+    padding: 1rem;
+    border: none;
+    font-size: 16px;
+}
+
+.register .inputbox input:focus {
+    outline: none;
+}
+
+.register p {
+    text-align: center;
+    color: rgb(10, 10, 10);
+}
+
+.register p span {
+    font-weight: bold;
+}
+
+.register .btn {
+    padding: .6rem;
+    margin-top: 20px;
+    border: none;
+    background-color: #41648c;
+    color: #fff;
+    border-radius: .8rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.register .btn:last-of-type {
+    border: 2px solid #010203;
+}
+
+.register .btn:hover {
+    opacity: 0.8;
+}

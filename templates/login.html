@@ -1,28 +1,50 @@
 {% load static %}
+<html>
 
-<!DOCTYPE html>
-<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Log in</title>
-	<link href="{% static 'css/login.css' %}" rel="stylesheet" >
+    <!-- fontawesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <!-- custom css link -->
+    <link rel="stylesheet" href="{% static 'registration.css' %}">
 </head>
+
 <body>
-	<h1><center>Login or create an</center></h1>
-	<h1><center>account with us</center></h1><br>
-{% for message in messages %}
-<h2><center>{{message}}</center></h2>
-{% endfor %}
-    <form action="login" method="POST"id="signin" class="input-group">
-{% csrf_token %}
-        <input type="text" name="username" class="input-field" placeholder="Username" required><br>
-        <input type="password" name="password" class="input-field" placeholder="Password"><br><br>
-        <!-- <input type="checkbox" class="check-box"><span>Remember password</span><br><br> -->
-        <button type="submit"  class="toggle-btn">Log in</button>
-        <p>Don't have an account?<button type="button"class="toggle-btn"><a href="register"> Sign Up</a></button> </p>
-    </div>
-    </form>
+
+    <section class="register">
+        <div class="row">
+            <h3>Welcome back</h3>
+            <h1>move it</h1>
+            <div class="content">
+                <form action="">
+                    <h1>
+                        <center>Login or create an</center>
+                    </h1>
+                    <h1>
+                        <center>account with us</center>
+                    </h1><br> {% for message in messages %}
+                    <h2>
+                        <center>{{message}}</center>
+                    </h2>
+                    {% endfor %}
+                    <form action="login" method="POST" id="signin" class="input-group">
+                        {% csrf_token %}
+                        <div class="inputbox">
+                            <span><i class="fas fa-user" aria-hidden="true"></i></span>
+                            <input type="text" placeholder="Username">
+                        </div>
+                        <div class="inputbox">
+                            <span><i class="fas fa-lock" aria-hidden="true"></i></span>
+                            <input type="password" placeholder="Password">
+                        </div>
+                        <p>Forgot password?</p>
+                        <input type="button" class="btn" value="sign in">
+                    </form>
+            </div>
+
+        </div>
+    </section>
+
 </body>
-</html> 
+
+</html>

@@ -129,7 +129,7 @@ STATIC_URL = 'static/'
 STATICFILES_DIRS = [
   'Relocate/static'
 ]
-STATIC_ROOT = ('assests')
+STATIC_ROOT = ('asset')
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
