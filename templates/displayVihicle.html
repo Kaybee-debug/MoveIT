@@ -1,9 +1,44 @@
-{% for item in items %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
 
-<p>{{item.transportation}}</p>
-<p>{{item.price }}</p>
-<p>{{item.weight}}</p>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transport</title>
+    <!-- custom css link -->
+    <link href="{% static 'css/transport.css' %}" rel="stylesheet">
+    <!-- fontawesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+</head>
 
+<body>
+    <div class="icons">
+        <i class="fa fa-angle-left" aria-hidden="true"><a href="">Back</a></i>
+        <i class="fa fa-bars" aria-hidden="true"></i>
+    </div>
+    <div class="container">
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d2292703.2473488115!2d34.007947184730824!3d-0.8420053431463557!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x182f1172d84d49a7%3A0xf7cf0254b297924c!2sNairobi!3m2!1d-1.2920658999999999!2d36.8219462!4m5!1s0x18298d90cf610bef%3A0xf2f21833bc7cc21a!2sNakuru!3m2!1d-0.3030988!2d36.080026!5e0!3m2!1sen!2ske!4v1678979324160!5m2!1sen!2ske"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="content">
+			{% for item in items %}
+            <div class="truck">
+                <div class="description">
+                    <h3>{{item.transportation}}</h3>
+                    <p>{{item.price }}</p>
+                    <h3>{{item.weight}}</h3>
+                </div>
+                <div class="image">
+                    <img src="{% static 'images/home-bg.jpg' %}" alt="" srcset="">
+                </div>
+            </div>
+			{% endfor %}
+        </div>
+    </div>
+</body>
 
-{% endfor %}
-
+</html>
